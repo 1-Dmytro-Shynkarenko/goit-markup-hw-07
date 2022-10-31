@@ -74,6 +74,10 @@ input:-webkit-autofill:active {
   color: var(--main-text-color);
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 15px;
@@ -704,7 +708,7 @@ input:-webkit-autofill:active {
 }
 
 .header {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   z-index: 2;
@@ -774,9 +778,6 @@ input:-webkit-autofill:active {
           transition-duration: var(--duration);
   -webkit-transition-timing-function: var(--timing-function);
           transition-timing-function: var(--timing-function);
-}
-.footer__address:hover, .footer__address:focus {
-  color: var(--accent-color);
 }
 
 .footer__title {
@@ -881,6 +882,7 @@ input:-webkit-autofill:active {
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  cursor: pointer;
   -webkit-transition-property: border-color;
   transition-property: border-color;
   -webkit-transition-duration: var(--duration);
@@ -911,6 +913,7 @@ input:-webkit-autofill:active {
 }
 .form__field:hover .form__icon, .form__field:focus .form__icon {
   fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .form__textarea {
@@ -923,6 +926,7 @@ input:-webkit-autofill:active {
   background-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  cursor: pointer;
   -webkit-transition-property: border-color;
   transition-property: border-color;
   -webkit-transition-duration: var(--duration);
@@ -1055,16 +1059,12 @@ input:-webkit-autofill:active {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  -webkit-transition-property: color, -webkit-box-shadow, -webkit-transform;
-  transition-property: color, -webkit-box-shadow, -webkit-transform;
-  transition-property: color, box-shadow, transform;
-  transition-property: color, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-property: fill, none, none;
+  transition-property: fill, none, none;
   -webkit-transition-duration: var(--duration);
           transition-duration: var(--duration);
   -webkit-transition-timing-function: var(--timing-function);
           transition-timing-function: var(--timing-function);
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 .modal__btn:hover, .modal__btn:focus {
   color: var(--accent-color);

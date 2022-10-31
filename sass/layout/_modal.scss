@@ -206,7 +206,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  @include transition(fill, var(--duration), var(--timing-function));
+  @include transition($one:fill, $time:var(--duration), $func:var(--timing-function));
 
   &:hover,
   &:focus {
